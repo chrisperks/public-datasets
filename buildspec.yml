@@ -1,8 +1,7 @@
 version: 0.2
-    phases:
-      build:
-        commands:
-          - echo Uploading to S3 
-          - aws s3 cp links.csv s3://sagemaker102030405
-        
-    
+
+phases:
+  build:
+    commands:
+      - echo Uploading to S3 
+      - aws s3 cp links.csv s3://sagemaker102030405
